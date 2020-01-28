@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [7.2.0] - 2019-11-20
+
 ### Added
 - Add rough version of ContextualMenuDispatcher to solve conflict amongst SRP.
 - Add api documentation for TextureCombiner.
@@ -29,7 +31,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed shader compile errors about LODDitheringTransition not being supported in GLES2.
 - Fix `WaveIsFirstLane()` to ignore helper lanes in fragment shaders on PS4.
 - Fixed a bug where Unity would crash if you tried to remove a Camera component from a GameObject using the Inspector window, while other components dependended on the Camera component.
-- Fixed errors due to the debug menu when enabling the new input system.
 
 ## [7.1.1] - 2019-09-05
 
@@ -42,7 +43,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Removed `normalize` from `UnpackNormalRGB` to match `UnpackNormalAG`.
 - Fixed shadow routines compilation errors when "real" type is a typedef on "half".
 - Removed debug menu in non development build.
-
 
 ## [7.0.1] - 2019-07-25
 

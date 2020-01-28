@@ -1,7 +1,3 @@
-#if ENABLE_INPUT_SYSTEM && ENABLE_INPUT_SYSTEM_PACKAGE
-#define USE_INPUT_SYSTEM
-#endif
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -380,12 +376,6 @@ namespace UnityEditor.Rendering
             if (GUILayout.Button(k_ResetButtonContent, EditorStyles.toolbarButton))
                 DebugManager.instance.Reset();
             GUILayout.EndHorizontal();
-
-            // We check if the legacy input manager is not here because we can have both the new and old input system at the same time
-            // and in this case the debug menu works correctly.
-#if !ENABLE_LEGACY_INPUT_MANAGER
-            EditorGUILayout.HelpBox("The debug menu does not support the new Unity Input package yet. inputs will be disabled in play mode and build.", MessageType.Error);
-#endif
 
             using (new EditorGUILayout.HorizontalScope())
             {
